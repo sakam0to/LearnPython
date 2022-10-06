@@ -5,6 +5,7 @@ print(f"any({lst}):{any(lst)}")
 lst = [False, False, False]
 print(f"any({lst}):{any(lst)}")
 
+# evaluate key only
 dic = {"k1": "v1", "k2": "v2"}
 print(f"any({dic}):{any(dic)}")
 dic = {0: "v1", 0: "v2"}
@@ -14,6 +15,27 @@ ran = range(1, 100)
 print(f"any({ran}):{any(ran)}")
 lst = [0, 0, 0]
 print(f"any({lst}):{any(lst)}")
+
+# all([]): and operation for all elements in list
+print("all:")
+lst = [True, False, False]
+print(f"all({lst}):{all(lst)}")
+lst = [False, False, False]
+print(f"all({lst}):{all(lst)}")
+lst = [True, True, True]
+print(f"all({lst}):{all(lst)}")
+lst = []
+print(f"all({lst}):{all(lst)}")
+
+# evaluate key only
+dic = {"k1": True, "k2": True}
+print(f"all({dic}):{all(dic)}")
+dic = {"k1": True, "k2": False}
+print(f"all({dic}):{all(dic)}")
+dic = {"k1": "v1", "k2": "v2"}
+print(f"all({dic}):{all(dic)}")
+dic = {0: "v1", 1: "v2"}
+print(f"all({dic}):{all(dic)}")
 
 # built-in math
 print("built-in math:")
